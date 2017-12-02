@@ -1,0 +1,42 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "env": {
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            2
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": "off"
+    },
+    "globals": {
+        "artifacts": false,
+        "web3": false,
+        "assert": false,
+        "contract": false,
+        "describe": false,
+        "context": false,
+        "it": false,
+        "beforeEach": false,
+        "before": false,
+        "afterEach": false,
+        "after": false,
+        "Promise": false
+    }
+}

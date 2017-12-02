@@ -1,0 +1,4 @@
+.cache
+.serverless
+node_modules/
+dist/

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2016",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "noImplicitAny": true,
+    "strict": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "paths": {
+      "~*": ["./*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

@@ -1,0 +1,19 @@
+version: '2'
+services:
+  lambda-builder:
+    build:
+      dockerfile: docker/lambda-builder/Dockerfile
+      context: ../
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_DEFAULT_REGION
+      - SLS_DEBUG=*
+    volumes:
+      - ../dist:/var/task
+      - lambda_node_modules:/var/task/node_modules
+      - lambda_serverless:/var/task/.serverless
+
+volumes:
+  lambda_node_modules:
+  lambda_serverless:
